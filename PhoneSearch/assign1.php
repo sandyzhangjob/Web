@@ -15,7 +15,7 @@
 		$price    =  explode(",", fgets($price));
 		
 		// if there is no data in table, then load data into table, otherwise, do nothing
-		$QueryResult = mysqli_query($DBConnect, "select * from product;") or die('query failed'. mysqli_error($conn)); 
+		$QueryResult = mysqli_query($DBConnect, "select * from product;") or die('query failed'. mysqli_error($conn));
 		
 		if (mysqli_num_rows($QueryResult) == 0){
 			for($i = 0; $i < 10; $i++){
@@ -62,7 +62,7 @@
 
  <?php
 	// read database information from topsecret file
-	$f    = fopen("/home/int322_171d26/secret/topsecret","r");
+	$f    = fopen("/var/www/html/PhoneSearch/topsecret","r");
 	$line = fgets($f);
 	$str  = explode(",", $line);
 	$dbserver = $str [0];
