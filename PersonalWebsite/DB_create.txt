@@ -1,0 +1,38 @@
+create table users(
+uid      integer(3) primary key auto_increment,
+email    varchar(50) not null unique,
+password varchar(50) not null,
+fname    varchar(30) not null,
+lname    varchar(30) not null,
+phone    varchar(20)  not null,
+address  varchar(50) not null,
+city     varchar(20) not null,
+province varchar(20) not null,
+country  varchar(20) not null,
+school   varchar(30) not null,
+program  varchar(30) not null,
+edulevel varchar(30) not null,
+edustatus varchar(30) not null,
+gradate  date
+);
+
+alter table users AUTO_INCREMENT=1;
+insert into users(email,password,fname,lname,phone,address,city,province,country,school,program,edulevel,edustatus,gradate) values('SandyZhang.job@gmail.com','hdSH320=','Sandy', 'Zhang', replace('647-877-2268','-',''),'12 Marconi Crt','North York','ON','Canada','Seneca','CPA','Technical','EducationStatus','2018/02/01');
+
+
+"email":"SandyZhang.job@gmail.com
+"password":"hdSH320="
+"FirstName":"Sandy"
+"LastName":"Zhang"
+"PhoneNumber":"647-877-2268"
+"Address":"12 Marconi Crt"
+"City":"North York"
+"Province":"ON"
+"Country":"Canada"
+"School":"Seneca"
+"Program":"CPA"
+"EducationLevel":"Technical"
+"EducationStatus":"EducationStatus"
+"GraduationDate":"2018/02/01"
+
+

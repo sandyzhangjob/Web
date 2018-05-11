@@ -1,0 +1,131 @@
+﻿body
+{
+  background-color:#cccccc;
+  font-family:'Times New Roman', Times, serif;
+}
+
+span {
+  color:red;
+}
+
+span.headersize {
+  font-size:20px;
+  color:white;
+}
+
+form{
+  margin:0px auto;
+  width:600px;
+  background-color:white;
+  border:1px solid white;
+  border-radius:5px;
+  box-shadow: -1px -2px 12px 6px rgba(115,115,115,1);
+}
+
+div {
+  /*padding-left:10px;*/
+  background-color:#f6f6f6;
+  margin-top:25px;
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom:0px;
+}
+
+form h1{
+  background-color: blue;
+  margin:0px;
+  border:1px solid red;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  padding-left:10px;
+  padding-top:15px;
+  color:white;
+}
+
+#Province, #EducationLevel {
+  margin-left:1px;
+}
+
+.country {
+  margin-left:2px;
+}
+
+pre.top{
+  color:red;
+}
+
+#fontsize{
+  font-size:25px;
+  font-weight:bold;
+}
+
+h4{
+  background-color:#dddddd;
+  margin:0px;
+  padding-left:10px;
+}
+
+input, select, textarea {
+  box-sizing: border-box;
+  width:300px;
+  margin-left: 5px;
+  margin-top:10px;
+  margin-bottom:0px;
+  box-shadow: 3px 3px 4px -1px rgba(194,190,194,1);
+  border:0px hidden white;
+  border-radius:4px;
+  position:relative;
+}
+
+fieldset {
+  box-sizing: border-box;
+  position:relative;
+  left:155px;
+  width:300px;
+  border-radius:8px;
+  box-shadow: 3px 3px 4px -1px rgba(194,190,194,1);
+  background-color:#ffffff;
+}
+
+fieldset input {
+  width:10px;
+  box-shadow: 3px 3px 4px -1px rgba(194,190,194,1);
+}
+
+label {
+  display:inline-block;
+  width:150px;
+  text-align:right;
+}
+
+div.ResetApply {
+  background-color:white;
+  margin-top:10px;
+  margin-bottom:30px;
+  margin-left:220px;
+
+}
+
+div.ResetApply button{
+  background-color:blue;
+  border:2px solid blue;
+  color:white;
+  border-radius:5px;
+  width:70px;
+}
+
+#error1 p, #error2 p, #error3 p, #error4 p, #error5 p {
+  font-size:8px;
+  color:black;
+  margin-left:160px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+#error6 p {
+  font-size:8px;
+  color:black;
+  margin-left:20px;
+  margin-top:0px;
+  margin-bottom:0px;
+}

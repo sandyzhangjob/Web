@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="css/register.css" type="text/css"/>
+</head>
+<body>
+<a href="index.php">Back to Home</a>
+  <form name="form" method="post" action="registerAdmin.php" onsubmit="return formValidation();">
+    <h1>Become a member<span class="headersize"></span></h1>
+    <pre id="fontsize">  Create Your Account</pre>
+    <pre class="top">  * Required information</pre>
+    <div class="BasicInfo">
+      <h4>Basic Information</h4>
+      <label for="email">Email <span>*</span> </label><input type="email" id="email" name="email" autofocus="autofocus" required="required" /><br />
+      <label for="password">Password <span>*</span> </label><input type="password" id="password" name="password" required="required" onchange="validatePassword()"/><span id="error3"></span><br />
+      <label for="RePassword">Repeat Password <span>*</span> </label><input type="password" id="RePassword" name="RePassword" required="required" onchange="validateRePassword()"/><span id="error4"></span><br />
+      <label for="FirstName">First Name <span>*</span> </label><input type="text" id="FirstName" name="FirstName" required="required" onchange="validateFirstName()" /><span id="error1"></span><br />
+      <label for="LastName">Last Name <span>*</span> </label><input type="text" id="LastName" name="LastName" required="required" onchange="validateLastName()" /><span id="error2"></span><br />
+  <label for="PhoneNumber">Phone Number <span>*</span> </label><input type="tel" id="PhoneNumber" name="PhoneNumber" required="required" placeholder="999-999-9999" pattern="^\d{3}-\d{3}-\d{4}$" onchange="validatePhoneNumber()" /><span id="error5"></span><br />
+  <label for="Address">Home Address <span>*</span> </label><input type="text" id="Address" name="Address" required="required" /><br />
+  <label for="City">City <span>*</span> </label><input type="text" id="City" name="City" required="required" /><br />
+  <label for="Province">Province <span>*</span> </label>
+  <select id="Province" name="Province">
+    <optgroup label="Provinces">
+      <option value="ON">Ontario</option>
+      <option value="QC">Quebec</option>
+      <option value="NS">Nova Scotia</option>
+      <option value="NB">New Brunswick</option>
+      <option value="MB">Manitoba</option>
+      <option value="BC">British Columbia</option>
+      <option value="PE">Prince Edward Island</option>
+      <option value="SK">Saskatchewan</option>
+      <option value="AB" selected>Alberta</option>
+      <option value="NL">Newfoundland and Labrador</option>
+    </optgroup>
+    <optgroup label="Territories">
+      <option value="Nunavut">Nunavut</option>
+      <option value="Northwest">Northwest</option>
+      <option value="Yukon">Yukon</option>
+    </optgroup>
+  </select><br />
+
+  <label>Country <span>*</span> </label>
+  <input class="country" type="text" list="Country" name="Country" placeholder="" />
+  <datalist id="Country">
+    <option value="Canada">Canada</option>
+    <option value="UnitedStates">The United States</option>
+    <option value="China">China</option>
+    <option value="India">India</option>
+    <option value="Korea">Korea</option>
+  </datalist>
+
+</div>
+    <div class="Education">
+      <h4>Education</h4>
+      <label for="School">School <span>*</span> </label><input type="text" id="School" name="School" required="required" /><br />
+      <label for="Program">Program <span>*</span> </label><input type="text" id="Program" name="Program" required="required"/><br />
+      <label for="EducationLevel">Education Level <span>*</span> </label>
+        <select id="EducationLevel" name="EducationLevel">
+          <option value="0">- select -</option>
+          <option value="Technical">Technical Diploma</option>
+          <option value="College">College Diploma</option>
+          <option value="Bachelor">Bachelor's Degree</option>
+          <option value="Master">Master's Degree</option>
+          <option value="Others">Others</option>
+        </select><br />
+      <fieldset>
+        <legend>Education Status</legend>
+        <input type="radio" name="EducationStatus" value="Graduated"  />Graduated<br />
+        <input type="radio" name="EducationStatus" value="CurrentEnrolled"  />Current Enrolled<br />
+        <input type="radio" name="EducationStatus" value="Didnotgraduate"   />Did not graduate<br /><span id="error6"></span>
+      </fieldset>
+      <label for="GraduationDate">Graduation Date </label><input type="date" id="GraduationDate" name="GraduationDate" required="required" /><br />
+    </div>
+    <div class="ResetApply">
+      <button type="reset">Reset</button>
+      <button type="submit" name="submit">Apply</button>
+    </div>
+  </form>
+
+<script src="js/register.js"> </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+﻿body {
+  background: url(../images/background_ski.jpg) no-repeat;
+  background-size:cover;
+  background-color:darkgrey;
+  background-attachment:fixed;
+  padding:0px 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  width: 1010px;
+}
+
+header.headertop {
+    padding:2px 25px;
+    background-color:rgba(255,255,255,0.9);
+    color:#948450;
+    font-size:30px;
+    margin:0px;
+    border-radius: 25px;
+}
+
+nav {
+  background-color:black;
+  height:40px;
+  font-size: 15px;
+  color:#ffffff;
+  border:2px outset #ffd800;
+  border-radius: 25px;
+  margin-top:5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding:0px;
+    margin:3px 0px;
+    text-align:center;
+}
+
+nav ul li {
+    display:inline-block;
+    /*position: relative;*/
+}
+
+nav ul li a {
+  text-decoration:none;
+  color: #ffffff;
+  padding: 8px;
+  background-color:Highlight;
+  text-transform: uppercase;
+  font-family: Georgia,'Times New Roman',Times, serif;
+  width: 80px;
+  height: 30px;
+  line-height:30px;
+  margin-right: 5px;
+  padding: 0 5px;
+  border:2px outset #ffd800;
+  text-align:center;
+  border-radius: 5px;
+  display:block;
+}
+
+nav ul li a:hover {
+  background-color:#6eedfa;
+}
+
+nav ul li:hover{
+  cursor:pointer;
+}
+
+nav ul li:hover ul{
+  visibility:visible;
+  display:block;
+  width:30px;
+}
+
+nav ul li ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  visibility: hidden;
+  transition: opacity 0.2s;
+  position: absolute;
+  width: 150px;
+  background-color: Highlight;
+  z-index:99;
+}
+
+aside {
+    float: left;
+    width: 230px;
+    margin-right: 20px;
+    margin-top:20px;
+    color:#948450;
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 25px;
+    /*position:fixed;
+    top: 5px;
+    left:5px;*/
+}
+
+aside img{
+  height: 170px;
+  width: 150px;
+  margin-left:40px;
+}
+
+aside p{
+  margin:1px;
+}
+
+aside h2 {
+  text-align:center;
+}
+
+aside div{
+  padding-left:3px;
+}
+
+.textintent{
+  text-indent:10px;
+  color:black;
+  font-size:18px;
+}
+
+.main {
+    float: left;
+    width: 550px;
+    margin-right: 20px;
+    margin-top: 20px;
+    /*margin-left:243px;*/
+}
+
+.entry-header {
+  background-color:rgba(255,255,255,0.9);
+  padding:2px 25px;
+  color:#000000;
+  font-size:20px;
+  margin-bottom:5px;
+  border-radius: 5px;
+}
+
+.entry-content {
+  background-color:rgba(255,255,255,0.9);
+  color:#000000;
+  font-size:15px;
+  padding:10px 20px;
+}
+
+.entry-footer{
+  background-color:rgba(255,255,255,0.9);
+  text-align:center;
+  padding:20px;
+  margin-bottom:20px;
+  color:#000000;
+  height:20px;
+  font-size:10px;
+}
+
+.links {
+  float: left;
+  width: 180px;
+  background-color:rgba(255,255,255,0.8);
+  margin-top: 10px;
+  border-radius: 25px;
+  padding-left:10px;
+  color:#635937;
+}
+
+.links a{
+  text-decoration:none;
+  color:#948450;
+}
+
+.links a:hover {
+  background-color:#6eedfa;
+}
+
+footer.end-footer{
+    clear: both;
+    /*background-color: #444;*/
+    color: black;
+    padding: 10px;
+    text-align:center;
+}
+
+/*Honesty, AboutMe*/
+.honestymain, .AboutMe {
+  background-color:rgba(255,255,255,0.5);
+  padding:2px 25px;
+  border-radius: 25px;
+  margin-top:10px;
+}
+
+/*Gallery*/
+/*body.hobby {
+  background: url(../images/g_background.jpg) no-repeat;
+  background-color:aqua;
+}*/
+
+figure.Gallery {
+  display: inline-block;
+  margin:20px;
+}
+
+.Gallery img {
+  height: 250px;
+  width: 400px;
+  vertical-align:top;
+}
+
+.Gallery figcaption {
+  text-align:center;
+  font-size:17px;
+  width: 400px;
+  background-color:rgba(255,255,255,0.5);
+  border-radius: 5px;
+}
+
+.gallerypage {
+  margin:10px;
+  text-align:center;
+  color:black;
+}
+
+/*Resume*/
+.profile-main {
+    float: left;
+    width: 800px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.profile-main h2 {
+  font-size:15px;
+  font-weight:bold;
+}
+
+.profile-header {
+  background-color:rgba(64, 129, 247, 0.50);
+  padding:2px 25px;
+  color:#000000;
+  font-size:20px;
+  margin-bottom:5px;
+  border-radius: 5px;
+}
+
+.profile-content {
+  /*float:right;*/
+  /*position:relative;*/
+  background-color:rgba(255,255,255,0.9);
+  color:#000000;
+  font-size:18px;
+  padding:10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+figure.Profile {
+  display: inline-block;
+  margin:20px;
+}
+
+.Profile img {
+  height: 200px;
+  width: 180px;
+  vertical-align:top;
+}
+
+.profile-content div{
+  display: inline-block;
+  padding-left:20px;
+  word-wrap:break-word;
+  margin-top:0px;
+}
