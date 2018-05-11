@@ -72,8 +72,9 @@
             •	Customized Apache Web server with PHP module in a Linux system.<br />
             •	Designed and created MySQL databases, testing, security.<br />
             •	Tools: PHP5, MySQL5, Linux, LAMP.<br />
-            <br /><a href="https://github.com/sandyzhangjob/Web/tree/master/PhoneSearch"> Github Link </a>
-            <br /><a href="http://ec2-35-174-128-0.compute-1.amazonaws.com/PhoneSearch/assign1.php"> Phone catalog Searching Link </a>
+              <br /><a href="https://github.com/sandyzhangjob/Web/tree/master/PhoneSearch"> Github Link </a>
+            <!--<br /><a href="http://ec2-35-174-128-0.compute-1.amazonaws.com/PhoneSearch/assign1.php"> Phone catalog Searching Link </a> -->
+              <br /><a href="http://zenit.senecac.on.ca:11636/assign1/assign1.php"> Phone catalog Searching Link </a>
           </p>
         </section>
         <footer class="entry-footer">
@@ -114,7 +115,7 @@
             •	Tools: HTML, CSS, JavaScript, PHP, MySQL, Apache. <br />
           </p>
           <br /><a href="https://github.com/sandyzhangjob/Web/tree/master/PersonalWebsite"> Github Link </a>
-          <br /><a href="http://ec2-35-174-128-0.compute-1.amazonaws.com/PersonalWebsite/index.html"> Personal Website Page Link </a>
+          <br /><a href="http://ec2-35-174-128-0.compute-1.amazonaws.com/PersonalWebsite/index.php"> Personal Website Page Link </a>
         </section>
         <footer class="entry-footer">
           <p>Shan Zhang,  02/15/2018  Tags: Projects</p>
